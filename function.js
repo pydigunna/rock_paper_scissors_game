@@ -32,24 +32,24 @@ function score(){
     for(let i=0;i<n;i++){
         let res=playGround(getHumanChoice(),getComputerChoice());
             if(res===1){
-                console.log("You won!");
+                alert("You won!");
                 humanScore++;
             }
             if(res==2){
                 computerScore++;
-                console.log("computer won!");
+                alert("computer won!");
             }
             if(res===0){
-                console.log("this round is tie");
+                alert("this round is tie");
             }
         }
         if(humanScore>computerScore){
-            console.log( "finally you win the game");
+            alert( "finally you win the game");
         }
         else if(humanScore<computerScore){
-            console.log(" finally you lost the game");
+            alert(" finally you lost the game");
         }
         else{
-            console.log("game is tie");
+            alert("game is tie");
         }
     }
